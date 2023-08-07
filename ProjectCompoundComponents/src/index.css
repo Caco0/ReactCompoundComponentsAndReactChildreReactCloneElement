@@ -34,6 +34,9 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  background: -webkit-linear-gradient(#6bec12, #1ebdee, #9612ec, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 button {
@@ -45,10 +48,12 @@ button {
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 3s;
 }
 button:hover {
+  content: '';
   border-color: #646cff;
+  box-shadow: 0 0 20px #fc45de, 0 0 20px #fc45de, 0 0 30px #fc45de inset;
 }
 button:focus,
 button:focus-visible {
